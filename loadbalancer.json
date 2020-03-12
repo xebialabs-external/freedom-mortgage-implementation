@@ -1,4 +1,9 @@
 {
+	"application": {
+		"applicationName": "hubsoap",
+		"lineofBusiness": "xyz"
+	},
+
 	"test": {
 		"docsoap": {
 			"ec2Instance": [{
