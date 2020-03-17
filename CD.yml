@@ -1,7 +1,7 @@
 --- 
 test: 
   docsoap: 
-    ec2.instance: 
+    ec2Instance: 
       - 
         id: i-074d29e65593e734d
     instances: 
@@ -11,7 +11,7 @@ test:
     targetGroup: "arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/tedmdblx01-docsoap/0d4ff2030a92d253"
   hubsoap: 
     - 
-      ec2.instance: 
+      ec2Instance: 
         - 
           id: i-0ad97897d71c307bc
       instances: 
