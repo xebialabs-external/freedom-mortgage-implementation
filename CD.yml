@@ -18,7 +18,7 @@ test:
         - 
           id: 1
           port: 8081
-      targetGroup: "arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/tedmbelx01-hubsoap/556e3bf420bd59b6"
+      targetGroup: "arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/tedmbelb01/aaed668c7c2876fc"
 uat: 
   docsoap: 
     - 
