@@ -1,0 +1,68 @@
+test:
+  hubsoap:
+    ec2.instance:
+			- id: i-0ad97897d71c307bc
+        target-arn: arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/tedmbelx01-hubsoap/556e3bf420bd59b6
+    instances:
+      - id: 1
+	      port: 8081
+  docsoap:
+    ec2.instance:
+			- id: i-074d29e65593e734d
+    target-arn: arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/tedmdblx01-docsoap/0d4ff2030a92d253
+      - id: 1
+        port: 8081
+uat:
+  hubsoap:
+    - targetGroup: arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/uedmbelb01-hubsoap/aa38789cd72274db
+      ec2Instance:
+        - id: i-03560b69f409e4eb0
+          instances:
+            - id: 1
+              port: 8081
+            - id: 2
+              port: 8082
+            - id: 3
+              port: 8083
+        - id: i-040ce6850397920cf
+          instances:
+            - id: 1
+              port: 8081
+            - id: 2
+              port: 8082
+            - id: 3
+              port: 8083
+  docsoap:
+    - targetGroup: arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/uedmdblb01-docsoap/e19805ec92c77da2
+      ec2Instance:
+        - id: i-0ade055142a61bd92
+          instances:
+            - id: 1
+              port: 8309
+            - id: 2
+              port: 8310
+    - targetGroup: arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/uedmdblb02-docsoap/c170610907af2c7f
+      ec2Instance:
+        - id: i-015f3ecf39f1aa6d9
+          instances:
+            - id: 1
+              port: 8080
+            - id: 2
+              port: 8081
+  imgsoap:
+    - targetGroup: arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/uedmdblb01-imgsoap/e3dc0fd81f9183f0
+      ec2Instance:
+        - id: i-0ade055142a61bd92
+      		instances:
+            - id: 3
+              port: 8311
+            - id: 4
+              port: 8312
+    - targetGroup: arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/uedmdblb02-imgsoap/522357291aadec70
+      ec2Instance:
+        - id: i-015f3ecf39f1aa6d9
+          instances:
+            - id: 3
+              port: 8082
+            - id: 4
+              port: 8083
