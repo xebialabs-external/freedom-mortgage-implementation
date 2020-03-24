@@ -40,10 +40,10 @@ uat:
           instances: 
             - 
               id: 1
-              port: 8080
+              port: 8380
             - 
               id: 2
-              port: 8081
+              port: 8381
       targetGroup: "arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/uedmdblb02-docsoap/c170610907af2c7f"
   hubsoap: 
     - 
@@ -53,25 +53,25 @@ uat:
           instances: 
             - 
               id: 1
-              port: 8081
+              port: 8381
             - 
               id: 2
-              port: 8082
+              port: 8382
             - 
               id: 3
-              port: 8083
+              port: 8383
         - 
           id: i-040ce6850397920cf
           instances: 
             - 
               id: 1
-              port: 8081
+              port: 8381
             - 
               id: 2
-              port: 8082
+              port: 8382
             - 
               id: 3
-              port: 8083
+              port: 8383
       targetGroup: "arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/uedmbelb01-hubsoap/aa38789cd72274db"
   imgsoap: 
     - 
@@ -93,8 +93,8 @@ uat:
           instances: 
             - 
               id: 3
-              port: 8082
+              port: 8382
             - 
               id: 4
-              port: 8083
+              port: 8383
       targetGroup: "arn:aws:elasticloadbalancing:us-east-1:996190702173:targetgroup/uedmdblb02-imgsoap/522357291aadec70"
